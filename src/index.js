@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import SearchBar from "./SearchBar";
-import SongPage from "./SongPage";
+import SearchPage from "./pages/searchPage";
+import SongPage from "./pages/songPage";
 
 import "./index.css";
 
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" exact component={SearchBar} />
+          <Route path="/" exact component={SearchPage} />
           <Route path="/SongPage" exact component={SongPage} />
         </Switch>
       </Router>
